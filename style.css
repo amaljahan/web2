@@ -1,0 +1,432 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #f0f2f5;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    background-color: #fff;
+    
+    
+}
+.nav-middle{
+    
+    width: 30%;
+    /* display: block; */
+    /* background-color: violet; */
+    /* border: 1px solid; */
+    /* the solid is needed to visible the  border.*/
+    margin-left: 50px;
+
+    
+}
+.nav-left{
+    
+    width: 33.3%;
+    /* display: block; */
+    
+    /* border: 1px solid; */
+    /* the solid is needed to visible the  border.*/
+    
+}
+
+
+
+.logo{
+
+    width: 60px;
+    padding-top: 9px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    padding-left: 17px;
+
+}
+.search-icon{
+    width: 268px;
+    padding-top: 6px;
+    padding-left: 3px;
+    /* padding-bottom: 0 ; */
+    /* background-color: aqua; */
+    /* border-radius: 50%; */
+    float: left;
+    
+
+    
+}
+.home-icon{
+
+    width: 40px;
+    padding-top: 7px;
+    float: left;
+    /* border-radius: 50%; */
+    /* padding-right: 5px; */
+    padding-left: 46px
+}
+.home-uline-icon{
+    position: absolute;/*it is used to overlay the uline over home icon*/
+    width: 107px;
+    height: 4px;
+    padding-top: 47px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    padding-left: 15px;
+}
+.freinds-icon{
+    width: 42px;
+    padding-top: 7px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    padding-left: 81px;
+
+}
+.groups-icon{
+    width: 44px;
+    padding-top: 9px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    padding-left: 81px;
+
+
+}
+.nav-right{
+    position: absolute;
+    right: 0;
+    height: 51px;
+    float: right;
+    width: 30%;
+    /* display: block; */
+    /* border: 1px solid; */
+    /* the solid is needed to visible the  border.*/
+    
+}
+.find-friends{
+    width: 113px;
+    padding-top: 5px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    padding-left: 126px;
+}
+.grid-menu{
+    
+   
+    width: 44px;
+    padding-top: 4px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    /* padding-left: 0; */
+}
+.messenger{
+    
+    width: 44px;
+    padding-top: 6px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    /* padding-left: 0px; */
+}
+.notification{
+    
+    width: 44px;
+    padding-top: 3px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    /* padding-left: 0; */
+}
+.profile{  
+    width: 38px;
+    padding-top: 6px;
+    float: left;
+    /* border-radius: 50%; */
+    padding-right: 5px;
+    /* padding-left: 0;*/
+
+}
+/* .contents{
+
+} */
+.left-sidebar{
+    display: flex;/*it is used to get vetically arranged block style*/
+    flex-direction: column;
+    /* gap: 20px; */
+    width:44 vh;
+    height: 100%;
+    /* padding-left: opxs; */
+    float: left;
+    background-color: #f0f2f5;
+    overflow-y: hidden;
+    
+}
+.center-sidebar{
+   
+    /* border: 1px solid; */
+    width: 106vh;
+    float: left;
+    height: 100vh;
+    background-color: #f0f2f5;
+    border: 1px solid black;
+    overflow:scroll ;
+
+    padding: 2vh 0vh 0vh 13vh;
+}
+.right-sidebar{
+    /* border: 1px solid;  */
+    width: 57vh;
+    height: 100vh;
+    float: left;
+    background-color: #f0f2f5;
+    padding-top: 20px
+}
+/* 
+.demo{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.demo img{
+    width: 36px;
+    height: 36px;
+}
+.demo :hover{
+    background-color: #fff;
+} */
+
+.left-sidebar li{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.right-sidebar li{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.left-sidebar ul{
+    list-style-type: none;
+    padding-left: 0px;
+    overflow-y:scroll ;
+}
+li:hover{
+    background-color: hsl(216, 20%, 85%);
+}
+.left-sidebar span{
+
+    padding-bottom: 29px;
+    /* top: 20px; */
+    /* text-align: center; */
+}
+
+.group{
+    color:  #8c8d8d;
+    padding-left: 6rem;
+    font-size: 17px;
+    font-family: sans-serif ;
+    font-weight: 600;
+    display: block;
+
+}
+.add{
+    border-radius: 50%;
+    width:3rem;
+    width:auto;
+    padding-left: 32px;
+}
+.right-sidebar div{
+    list-style-type: none;
+    position:absolute;
+    float: right;
+}
+.creatNewGroup{
+    color:  blue;
+    padding-left: 1rem;
+    margin: 0px 0px 0px 2px ; 
+    font-size: 16px;
+
+    font-family: sans-serif ;
+}
+
+
+.story { 
+    
+    width: 80vh;
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 7px;
+    /* color: black; */
+    padding: 11px;
+    box-shadow: 1px 1px 8px #c7c5c5;
+    display: block;
+    margin-bottom: 22px;
+
+}
+.story p{
+    color: black;
+    /* margin-bottom: 5px; */
+    float: left;
+    padding-top: 20px;
+    font-weight: bold;
+    /* display: inline-block;  */
+}
+
+.addstory{
+    float: left;
+    
+    /* display: inline-block;  */
+
+}
+/* p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+} */
+ small{
+    
+    display: block;
+    padding: 39px 0px 0px 0px;
+    color: #65676B;
+
+ }
+ .blogPoint{
+    width: 80vh;
+    height: 8rem;
+    background-color: #fff;
+    border-radius: 15px;
+    /* color: black; */
+    padding: 11px;
+    /* margin: 16px 0px 0 187px; */
+    display: block;
+    box-shadow: 1px 1px 8px #c7c5c5;
+    /* float: left; */
+ }
+ .profiile{
+    float: left;
+    padding-right:8px;
+   
+ }
+ .searchbox{
+    width: 67vh;
+    height: 6vh;
+    /* background-color: aqua; */
+    float: left;
+    border-radius: 0%;
+    margin-top: 7px;
+    /* border-radius: 15%; */
+ }
+ .searchbox input{
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 10px;
+    height: 100%;
+    border-radius: 20px;
+    border: 0;
+    background-color: #f1f0f0;
+    font-size: 15px;
+    outline: none;
+ }
+ .blogPoint hr{
+    padding: 0px 0px 0px 0px;
+ }
+.socialConnection{
+    width:100%;
+    height: 48%;
+    /* background-color: aqua; */
+    float: left;
+    border-top: 1px solid rgb(231, 231, 231);
+    /* margin-top: 5px; */
+}
+.socialConnection a{
+    text-decoration: none;
+    padding-left: 20px;
+    
+}
+.post-container{
+    width: 80vh;
+    height:110vh;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #c7c5c5;
+
+}
+.post-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    padding: 2vh 0vh 0vh 2vh;
+}
+.user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+
+}
+.user-profile p{
+    font-weight: 700;
+    color:black;
+}
+.user-profile span{
+    font-size: 11px;
+    color: #8c8d8d;
+}
+.user-profile a{
+    color: #8c8d8d;
+}
+.content{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+
+}
+.activityIcons{
+    /* border: 1px solid; */
+    border-top:1px solid black;
+    display: inline;
+    margin-left: 5vh;
+    width: 100%;
+}
+.activityIcons div{
+    
+    display: inline-flex;
+    align-items: center;
+    margin-left: 9vh;
+    /* display: inline;
+    display: flex; */
+}
+.activity{
+    display: flex;
+
+    width: 100%;
+}
+.activity img{
+    display: inline;
+
+}
+.activity span{
+    float: right;
+}
